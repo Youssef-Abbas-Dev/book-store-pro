@@ -1,0 +1,153 @@
+.cart {
+    padding: 30px;
+}
+
+.cart-title {
+    font-weight: 600;
+    font-size: 32px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid teal;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+.cart-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cart-items {
+    width: 70%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 21px;
+    border-bottom: 2px solid gray;
+}
+
+.cart-item-img {
+    width: 140px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.cart-item-info {
+    padding: 10px;
+    width: calc(100% - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.cart-item-book-title {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.cart-item-author {
+    font-size: 21px;
+}
+
+.cart-item-quantity {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.cart-item-quantity button {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.cart-item-quantity button:disabled {
+    cursor: not-allowed;
+}
+
+.cart-item-quantity b {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.cart-item-price {
+    font-size: 24px;
+    text-align: center;
+}
+
+.bi-trash-fill {
+    color: crimson;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 24px;
+}
+
+
+.cart-order-summary {
+    width: 30%;
+    border: 1px solid gray;
+    margin: 0 10px;
+}
+
+.order-summary-title {
+    font-size: 24px;
+    padding: 15px 10px;
+}
+
+.order-summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding: 10px;
+    font-size: 21px;
+}
+
+@media (max-width: 1200px) {
+    .cart-wrapper {
+        flex-direction: column;
+    }
+
+    .cart-items {
+        width: 100%;
+    }
+
+    .cart-order-summary {
+        width: 320px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 920px) {
+    .cart-item-quantity {
+        font-size: 24px;
+        margin-bottom: 5px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 520px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart-item-info {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .cart {
+        padding: 15px;
+    }
+}
