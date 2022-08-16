@@ -21,6 +21,7 @@ ul {
   list-style: none;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }

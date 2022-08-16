@@ -1,0 +1,42 @@
+.authors {
+    padding: 30px;
+}
+
+.authors-search-wrapper {
+    margin-bottom: 30px;
+}
+
+.authors-search-wrapper input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 21px;
+}
+
+.authors-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.author {
+    width: 400px;
+    height: 365px;
+    border: 1px solid gray;
+    padding: 15px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+}
+
+.author-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+}
