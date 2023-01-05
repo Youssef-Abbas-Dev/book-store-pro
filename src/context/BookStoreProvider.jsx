@@ -4,6 +4,7 @@ import BookStoreContext from "./bookStorContext";
 const BookStoreProvider = ({ children }) => {
   const [cartInfo, setCartInfo] = useState([]);
 
+  // Handle Add To Cart
   const addToCart = (item, qty) => {
     const newCartItem = {
       id: item.id,

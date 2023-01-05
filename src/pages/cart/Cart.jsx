@@ -30,13 +30,13 @@ const Cart = () => {
                 <div>
                   <div className="cart-item-quantity">
                     <button
-                      onClick={() => addToCart(item, item.quantity + 1)}
+                      onClick={() => addToCart(item, parseInt(item.quantity) + 1)}
                       className="bi bi-plus-lg"
                     ></button>
                     <b>{item.quantity}</b>
                     <button
                       disabled={item.quantity <= 1}
-                      onClick={() => addToCart(item, item.quantity - 1)}
+                      onClick={() => addToCart(item, parseInt(item.quantity) - 1)}
                       className="bi bi-dash-lg"
                     ></button>
                   </div>
